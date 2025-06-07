@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MyApp Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .feature-img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body class="bg-light">
 
@@ -18,9 +30,10 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -29,50 +42,79 @@
 
 <!-- Hero Section -->
 <main>
-  <section class="bg-primary text-white text-center py-5">
+  <section id="hero" class="bg-primary text-white text-center py-5">
     <div class="container">
       <h1 class="display-4 fw-bold">Welcome to MyApp</h1>
       <p class="lead">Experience the ultimate solution for your daily needs. Fast, reliable, and easy to use.</p>
-      <a href="#" class="btn btn-light btn-lg fw-semibold mt-3">Get Started</a>
+      <p class="mb-4">MyApp brings all your tools together in one place, helping you stay organized, productive, and ahead of your schedule — whether you're managing personal tasks or collaborating with a team.</p>
+      <a href="#features" class="btn btn-light btn-lg fw-semibold mt-3">Get Started</a>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="py-5">
+  <section id="features" class="py-5">
     <div class="container">
       <h2 class="text-center fw-bold mb-5">App Features</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card border-0 shadow h-100 text-center">
             <div class="card-body">
+              <img src="img1.png" alt="Feature 1" class="feature-img">
               <h5 class="card-title fw-semibold">Feature One</h5>
-              <p class="card-text">Description of the first feature. It's powerful and useful for daily tasks.</p>
+              <p class="card-text">Manage all your to-dos, reminders, and projects in one streamlined interface. Stay on track with smart notifications and deadlines tailored to your routine.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card border-0 shadow h-100 text-center">
             <div class="card-body">
+              <img src="img1.png" alt="Feature 2" class="feature-img">
               <h5 class="card-title fw-semibold">Feature Two</h5>
-              <p class="card-text">Description of the second feature. Boosts your productivity and efficiency.</p>
+              <p class="card-text">Collaborate in real-time with your team. Share updates, assign roles, and track progress seamlessly with our user-friendly dashboard and cloud syncing.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card border-0 shadow h-100 text-center">
             <div class="card-body">
+              <img src="img1.png" alt="Feature 3" class="feature-img">
               <h5 class="card-title fw-semibold">Feature Three</h5>
-              <p class="card-text">Description of the third feature. Makes your workflow seamless and smooth.</p>
+              <p class="card-text">Access your workspace anywhere. Whether you’re on mobile, tablet, or desktop, MyApp offers a consistent and responsive experience across all platforms.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">What Our Users Say</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow rounded">
+            <p>"MyApp changed the way I manage my daily routine. The interface is clean, intuitive, and fast. Highly recommended!"</p>
+            <p class="mb-0 fw-bold">– Priya M., Freelancer</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow rounded">
+            <p>"We've improved our team communication and productivity by 40% since switching to MyApp. It's a game changer."</p>
+            <p class="mb-0 fw-bold">– Rahul S., Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spacer to show scroll effect -->
+  <div style="height: 100px;"></div>
+
 </main>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
+<footer id="contact" class="bg-dark text-white text-center py-4">
   <div class="container">
     <p class="mb-1">&copy; 2025 <strong>MyApp</strong>. All rights reserved.</p>
     <p class="mb-0">Contact: support@myapp.com | Phone: +91 1234567890</p>
